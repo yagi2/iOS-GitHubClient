@@ -21,7 +21,18 @@
 		C5C4106E2654073800438388 /* RepoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4106D2654073800438388 /* RepoAPIClient.swift */; };
 		C5C410732654078300438388 /* RepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C410722654078300438388 /* RepoRepository.swift */; };
 		C5C41078265407AA00438388 /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41077265407AA00438388 /* RepoListViewModel.swift */; };
+		C5C41082265408A900438388 /* RepoListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41081265408A900438388 /* RepoListViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5C41084265408A900438388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ADB80E2653F7AF00A4E4D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ADB8152653F7AF00A4E4D5;
+			remoteInfo = GitHubClient;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C5ADB8162653F7AF00A4E4D5 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +51,20 @@
 		C5C4106D2654073800438388 /* RepoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoAPIClient.swift; sourceTree = "<group>"; };
 		C5C410722654078300438388 /* RepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepository.swift; sourceTree = "<group>"; };
 		C5C41077265407AA00438388 /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
+		C5C4107F265408A900438388 /* GitHubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C41081265408A900438388 /* RepoListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModelTest.swift; sourceTree = "<group>"; };
+		C5C41083265408A900438388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C5ADB8132653F7AF00A4E4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C4107C265408A900438388 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ADB8182653F7AF00A4E4D5 /* GitHubClient */,
+				C5C41080265408A900438388 /* GitHubClientTests */,
 				C5ADB8172653F7AF00A4E4D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ADB8162653F7AF00A4E4D5 /* GitHubClient.app */,
+				C5C4107F265408A900438388 /* GitHubClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +178,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C5C41080265408A900438388 /* GitHubClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5C41081265408A900438388 /* RepoListViewModelTest.swift */,
+				C5C41083265408A900438388 /* Info.plist */,
+			);
+			path = GitHubClientTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +207,24 @@
 			productReference = C5ADB8162653F7AF00A4E4D5 /* GitHubClient.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C5C4107E265408A900438388 /* GitHubClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C41086265408A900438388 /* Build configuration list for PBXNativeTarget "GitHubClientTests" */;
+			buildPhases = (
+				C5C4107B265408A900438388 /* Sources */,
+				C5C4107C265408A900438388 /* Frameworks */,
+				C5C4107D265408A900438388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C41085265408A900438388 /* PBXTargetDependency */,
+			);
+			name = GitHubClientTests;
+			productName = GitHubClientTests;
+			productReference = C5C4107F265408A900438388 /* GitHubClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +236,10 @@
 				TargetAttributes = {
 					C5ADB8152653F7AF00A4E4D5 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					C5C4107E265408A900438388 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C5ADB8152653F7AF00A4E4D5;
 					};
 				};
 			};
@@ -203,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				C5ADB8152653F7AF00A4E4D5 /* GitHubClient */,
+				C5C4107E265408A900438388 /* GitHubClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +269,13 @@
 			files = (
 				C5ADB8212653F7B000A4E4D5 /* Preview Assets.xcassets in Resources */,
 				C5ADB81E2653F7B000A4E4D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C4107D265408A900438388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +301,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5C4107B265408A900438388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C41082265408A900438388 /* RepoListViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5C41085265408A900438388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ADB8152653F7AF00A4E4D5 /* GitHubClient */;
+			targetProxy = C5C41084265408A900438388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C5ADB8232653F7B000A4E4D5 /* Debug */ = {
@@ -400,6 +478,44 @@
 			};
 			name = Release;
 		};
+		C5C41087265408A900438388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GitHubClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.yagi2.GitHubClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubClient.app/GitHubClient";
+			};
+			name = Debug;
+		};
+		C5C41088265408A900438388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GitHubClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.yagi2.GitHubClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubClient.app/GitHubClient";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +533,15 @@
 			buildConfigurations = (
 				C5ADB8262653F7B000A4E4D5 /* Debug */,
 				C5ADB8272653F7B000A4E4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C41086265408A900438388 /* Build configuration list for PBXNativeTarget "GitHubClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C41087265408A900438388 /* Debug */,
+				C5C41088265408A900438388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
