@@ -17,6 +17,7 @@
 		C5ADB8372653FC6900A4E4D5 /* RepoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB8362653FC6900A4E4D5 /* RepoRowView.swift */; };
 		C5ADB83B2653FCF400A4E4D5 /* Repo+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB83A2653FCF400A4E4D5 /* Repo+mock.swift */; };
 		C5ADB83F2653FCFD00A4E4D5 /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */; };
+		C5C4106A265405F500438388 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41069265405F500438388 /* Stateful.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C5ADB8362653FC6900A4E4D5 /* RepoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRowView.swift; sourceTree = "<group>"; };
 		C5ADB83A2653FCF400A4E4D5 /* Repo+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repo+mock.swift"; sourceTree = "<group>"; };
 		C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
+		C5C41069265405F500438388 /* Stateful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C5ADB8182653F7AF00A4E4D5 /* GitHubClient */ = {
 			isa = PBXGroup;
 			children = (
+				C5C41068265405EC00438388 /* Utilities */,
 				C5ADB8352653FC4200A4E4D5 /* Views */,
 				C5ADB8292653FB0100A4E4D5 /* Models */,
 				C5ADB8192653F7AF00A4E4D5 /* GitHubClientApp.swift */,
@@ -109,6 +112,14 @@
 				C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C5C41068265405EC00438388 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C5C41069265405F500438388 /* Stateful.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				C5ADB83B2653FCF400A4E4D5 /* Repo+mock.swift in Sources */,
 				C5ADB8322653FC2400A4E4D5 /* RepoDetailView.swift in Sources */,
 				C5ADB82B2653FB0C00A4E4D5 /* Repo.swift in Sources */,
+				C5C4106A265405F500438388 /* Stateful.swift in Sources */,
 				C5ADB81C2653F7AF00A4E4D5 /* RepoListView.swift in Sources */,
 				C5ADB81A2653F7AF00A4E4D5 /* GitHubClientApp.swift in Sources */,
 				C5ADB83F2653FCFD00A4E4D5 /* User+mock.swift in Sources */,
