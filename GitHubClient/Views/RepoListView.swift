@@ -1,13 +1,12 @@
 import SwiftUI
-import Combine
 
 struct RepoListView: View {
-    @StateObject private var reposLoader = ReposLoader()
+    @StateObject private var viewModel = RepoListViewModel()
     
     var body: some View {
         NavigationView {
             Group {
-                switch reposLoader.repos {
+                switch viewModel.repos {
                 case .idle, .loading:
                     ProgressView("loading...")
                 case .failed:
@@ -21,7 +20,7 @@ struct RepoListView: View {
                         .opacity(0.4)
                         Button(
                             action: {
-                                reposLoader.call()
+                                viewModel.onRetryButtonTapped()
                             },
                             label: {
                                 Text("Retry")
@@ -47,52 +46,8 @@ struct RepoListView: View {
             .navigationTitle("Repositories")
         }
         .onAppear {
-            reposLoader.call()
+            viewModel.onAppear()
         }
-    }
-}
-
-class ReposLoader: ObservableObject {
-    @Published private(set) var repos: Stateful<[Repo]> = .idle
-    
-    private var cancellables = Set<AnyCancellable>()
-    
-    let url = URL(string: "https://api.github.com/orgs/apple/repos")!
-    
-    func call() {
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "GET"
-        urlRequest.allHTTPHeaderFields = [
-            "Accept": "application/vnd.github.v3+json"
-        ]
-        
-        let reposPublisher = URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .tryMap() { element -> Data in
-                guard let httpResponse = element.response as? HTTPURLResponse,
-                      httpResponse.statusCode == 200 else {
-                    throw URLError(.badServerResponse)
-                }
-                return element.data
-            }
-            .decode(type: [Repo].self, decoder: JSONDecoder())
-        
-        reposPublisher
-            .receive(on: DispatchQueue.main)
-            .handleEvents(receiveSubscription: { [weak self] _ in
-                self?.repos = .loading
-            })
-            .sink(receiveCompletion: { [weak self] completion in
-                switch completion {
-                case .failure(let error):
-                    print("Error: \(error)")
-                    self?.repos = .failed(error)
-                case .finished:
-                    print("Finished")
-                }
-            }, receiveValue: { [weak self] repos in
-                self?.repos = .loaded(repos)
-            })
-            .store(in: &cancellables)
     }
 }
 

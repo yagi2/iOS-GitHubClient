@@ -18,6 +18,9 @@
 		C5ADB83B2653FCF400A4E4D5 /* Repo+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB83A2653FCF400A4E4D5 /* Repo+mock.swift */; };
 		C5ADB83F2653FCFD00A4E4D5 /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */; };
 		C5C4106A265405F500438388 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41069265405F500438388 /* Stateful.swift */; };
+		C5C4106E2654073800438388 /* RepoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4106D2654073800438388 /* RepoAPIClient.swift */; };
+		C5C410732654078300438388 /* RepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C410722654078300438388 /* RepoRepository.swift */; };
+		C5C41078265407AA00438388 /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41077265407AA00438388 /* RepoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C5ADB83A2653FCF400A4E4D5 /* Repo+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repo+mock.swift"; sourceTree = "<group>"; };
 		C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
 		C5C41069265405F500438388 /* Stateful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		C5C4106D2654073800438388 /* RepoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoAPIClient.swift; sourceTree = "<group>"; };
+		C5C410722654078300438388 /* RepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepository.swift; sourceTree = "<group>"; };
+		C5C41077265407AA00438388 /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 		C5ADB8182653F7AF00A4E4D5 /* GitHubClient */ = {
 			isa = PBXGroup;
 			children = (
+				C5C41076265407A200438388 /* ViewModels */,
+				C5C410712654077C00438388 /* Repositories */,
+				C5C4106C2654073000438388 /* APIClients */,
 				C5C41068265405EC00438388 /* Utilities */,
 				C5ADB8352653FC4200A4E4D5 /* Views */,
 				C5ADB8292653FB0100A4E4D5 /* Models */,
@@ -120,6 +129,30 @@
 				C5C41069265405F500438388 /* Stateful.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C5C4106C2654073000438388 /* APIClients */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4106D2654073800438388 /* RepoAPIClient.swift */,
+			);
+			path = APIClients;
+			sourceTree = "<group>";
+		};
+		C5C410712654077C00438388 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C5C410722654078300438388 /* RepoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C5C41076265407A200438388 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5C41077265407AA00438388 /* RepoListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,10 +229,13 @@
 				C5ADB8322653FC2400A4E4D5 /* RepoDetailView.swift in Sources */,
 				C5ADB82B2653FB0C00A4E4D5 /* Repo.swift in Sources */,
 				C5C4106A265405F500438388 /* Stateful.swift in Sources */,
+				C5C410732654078300438388 /* RepoRepository.swift in Sources */,
 				C5ADB81C2653F7AF00A4E4D5 /* RepoListView.swift in Sources */,
 				C5ADB81A2653F7AF00A4E4D5 /* GitHubClientApp.swift in Sources */,
+				C5C41078265407AA00438388 /* RepoListViewModel.swift in Sources */,
 				C5ADB83F2653FCFD00A4E4D5 /* User+mock.swift in Sources */,
 				C5ADB8372653FC6900A4E4D5 /* RepoRowView.swift in Sources */,
+				C5C4106E2654073800438388 /* RepoAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
