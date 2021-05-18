@@ -8,9 +8,9 @@ struct RepoRowView: View {
                 .resizable()
                 .frame(width: 44, height:44)
             VStack(alignment: .leading) {
-                Text(repo.name)
-                    .font(.caption)
                 Text(repo.owner.name)
+                    .font(.caption)
+                Text(repo.name)
                     .font(.body)
                     .fontWeight(.semibold)
             }
