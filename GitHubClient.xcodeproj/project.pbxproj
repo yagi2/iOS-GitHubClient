@@ -22,6 +22,8 @@
 		C5C410732654078300438388 /* RepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C410722654078300438388 /* RepoRepository.swift */; };
 		C5C41078265407AA00438388 /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41077265407AA00438388 /* RepoListViewModel.swift */; };
 		C5C41082265408A900438388 /* RepoListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C41081265408A900438388 /* RepoListViewModelTest.swift */; };
+		C5C4108E26540D0500438388 /* DummyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4108D26540D0500438388 /* DummyError.swift */; };
+		C5C4109226540D1900438388 /* MockRepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4109126540D1900438388 /* MockRepoRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		C5C4107F265408A900438388 /* GitHubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C41081265408A900438388 /* RepoListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModelTest.swift; sourceTree = "<group>"; };
 		C5C41083265408A900438388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C4108D26540D0500438388 /* DummyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyError.swift; sourceTree = "<group>"; };
+		C5C4109126540D1900438388 /* MockRepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepoRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			children = (
 				C5ADB83A2653FCF400A4E4D5 /* Repo+mock.swift */,
 				C5ADB83E2653FCFD00A4E4D5 /* User+mock.swift */,
+				C5C4108D26540D0500438388 /* DummyError.swift */,
+				C5C4109126540D1900438388 /* MockRepoRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -291,10 +297,12 @@
 				C5ADB8322653FC2400A4E4D5 /* RepoDetailView.swift in Sources */,
 				C5ADB82B2653FB0C00A4E4D5 /* Repo.swift in Sources */,
 				C5C4106A265405F500438388 /* Stateful.swift in Sources */,
+				C5C4109226540D1900438388 /* MockRepoRepository.swift in Sources */,
 				C5C410732654078300438388 /* RepoRepository.swift in Sources */,
 				C5ADB81C2653F7AF00A4E4D5 /* RepoListView.swift in Sources */,
 				C5ADB81A2653F7AF00A4E4D5 /* GitHubClientApp.swift in Sources */,
 				C5C41078265407AA00438388 /* RepoListViewModel.swift in Sources */,
+				C5C4108E26540D0500438388 /* DummyError.swift in Sources */,
 				C5ADB83F2653FCFD00A4E4D5 /* User+mock.swift in Sources */,
 				C5ADB8372653FC6900A4E4D5 /* RepoRowView.swift in Sources */,
 				C5C4106E2654073800438388 /* RepoAPIClient.swift in Sources */,
