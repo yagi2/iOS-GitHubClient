@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C55A2EA726556E9C00838201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADB81D2653F7B000A4E4D5 /* Assets.xcassets */; };
 		C5ADB81A2653F7AF00A4E4D5 /* GitHubClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB8192653F7AF00A4E4D5 /* GitHubClientApp.swift */; };
 		C5ADB81C2653F7AF00A4E4D5 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB81B2653F7AF00A4E4D5 /* RepoListView.swift */; };
-		C5ADB81E2653F7B000A4E4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADB81D2653F7B000A4E4D5 /* Assets.xcassets */; };
 		C5ADB8212653F7B000A4E4D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADB8202653F7B000A4E4D5 /* Preview Assets.xcassets */; };
 		C5ADB82B2653FB0C00A4E4D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB82A2653FB0C00A4E4D5 /* Repo.swift */; };
 		C5ADB82F2653FB1000A4E4D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADB82E2653FB1000A4E4D5 /* User.swift */; };
@@ -273,8 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55A2EA726556E9C00838201 /* Assets.xcassets in Resources */,
 				C5ADB8212653F7B000A4E4D5 /* Preview Assets.xcassets in Resources */,
-				C5ADB81E2653F7B000A4E4D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
